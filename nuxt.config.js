@@ -2,7 +2,7 @@ export default {
   ssr: false,
   target: 'static',
   head: {
-    title: 'countries',
+    title: 'Countries | List of countries with name, currency and many more',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
