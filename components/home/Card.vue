@@ -8,8 +8,15 @@
       rounded-lg
       shadow-lg
       dark:bg-gray-800
+      group
+      relative
     "
   >
+    <div class="absolute bottom-0 left-0 opacity-0 bg-gray-100 h-1/2 w-full group-hover:opacity-100 flex items-center justify-center">
+       <div class="pt-8 text-center">
+           <nuxt-link to="/countries/" class="text-center rounded-lg p-4 bg-primary-700 text-white font-bold text-lg">Learn more</nuxt-link>
+        </div>
+    </div>
     <img
       class="object-cover object-center w-full h-56"
       :src="item.flag"
