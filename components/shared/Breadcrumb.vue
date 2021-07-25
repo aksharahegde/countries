@@ -1,5 +1,5 @@
 <template>
-  <ol vocab="http://schema.org/" typeof="BreadcrumbList" class="text-xs mt-1">
+  <ol vocab="http://schema.org/" typeof="BreadcrumbList" class="text-xs mt-1 py-2">
     <li property="itemListElement"
       typeof="ListItem">
       <nuxt-link to="/">Home</nuxt-link>
