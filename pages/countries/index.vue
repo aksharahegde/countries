@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <HomeHero/>
+  <main class="mt-16">
+    <CountryGrid />
   </main>
 </template>
 

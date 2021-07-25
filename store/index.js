@@ -19,5 +19,8 @@ export const getters = {
 export const actions = {
     async fetchCountries() {
         return await this.$axios.get(urls.all);
+    },
+    async fetchCountryByName({commit}, val) {
+        return await this.$axios.get(`${urls.name}/${val}`);
     }
 }

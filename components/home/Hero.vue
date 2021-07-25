@@ -37,6 +37,7 @@
               bg-clip-text bg-gradient-to-br
               from-primary-600
               to-primary-500
+              block
               md:inline-block
             "
             >
@@ -58,8 +59,8 @@
         </div>
         <div class="flex flex-col items-center mt-12 text-center">
           <span class="relative inline-flex w-full md:w-auto">
-            <a
-              href="#countries"
+            <nuxt-link
+              to="/countries"
               type="button"
               class="
                 inline-flex
@@ -82,7 +83,7 @@
               "
             >
               Expore Now
-            </a>
+            </nuxt-link>
           </span>
         </div>
       </div>

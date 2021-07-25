@@ -1,5 +1,6 @@
 <template>
   <div class="dark:bg-gray-900">
+    <SharedNavbar/>
     <Nuxt />
   </div>
 </template>

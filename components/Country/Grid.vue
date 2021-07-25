@@ -1,8 +1,11 @@
 <template>
     <section class="w-full px-6 pb-12 antialiased bg-white">
         <div class="mx-auto max-w-7xl">
-            <ul id="countries" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <HomeCard
+            <div class="mb-4 mx-auto">
+                <SharedBreadcrumb/>
+            </div>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <CountryCard
                     v-for="(country, index) in filteredData"
                     :key="index"
                     :item="country"

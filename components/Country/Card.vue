@@ -1,31 +1,25 @@
 <template>
-  <div
+  <li
     class="
-      max-w-sm
-      mx-auto
-      overflow-hidden
-      bg-white
+      relative
       rounded-lg
       shadow-lg
-      dark:bg-gray-800
+      border border-gray-200
+      dark:border-gray-400
+      overflow-hidden
+      hover:shadow-lg
       group
-      relative
+      bg-white
     "
   >
-    <div class="absolute bottom-0 left-0 opacity-0 bg-gray-100 h-1/2 w-full group-hover:opacity-100 flex items-center justify-center">
-       <div class="pt-8 text-center">
-           <nuxt-link to="/countries/" class="text-center rounded-lg p-4 bg-primary-700 text-white font-bold text-lg">Learn more</nuxt-link>
-        </div>
+    <div class="absolute bottom-0 left-0 opacity-0 bg-gray-800 h-56 w-full group-hover:opacity-100 flex items-center justify-center backdrop-filter backdrop-blur-lg bg-opacity-60">
+        <nuxt-link :to="{ name: 'countries-slug', params: { slug: item.name } }" class="text-center rounded-lg py-2 px-4 bg-primary-700 text-white font-bold text-lg">Learn more</nuxt-link>
     </div>
     <img
-      class="object-cover object-center w-full h-56"
+      class="object-cover object-center w-full h-56 border-b"
       :src="item.flag"
       :alt="item.name"
     />
-
-    <!-- <div class="flex items-center px-6 py-3 bg-gray-900">
-      <h1 class="mx-3 text-lg font-semibold text-white">{{ item.name }}</h1>
-    </div> -->
 
     <div class="px-6 py-4">
       <h1 class="text-xl font-semibold text-gray-800 dark:text-white">
@@ -83,11 +77,11 @@
         </svg>
         <div class="text-sm text-gray-500 mx-2">Currency</div>
         <h1 class="px-2 text-sm" v-if="item.currencies.length">
-            {{ item.currencies[0].name }}
+            {{ item.currencies[0].name }} ({{ item.currencies[0].symbol }})
         </h1>
       </div>
     </div>
-  </div>
+  </li>
 </template>
 <script>
 export default {

@@ -7,8 +7,8 @@
         items-center
         justify-center
         w-full
-        px-8
-        py-4
+        px-4
+        py-2
         text-base
         font-bold
         leading-6
